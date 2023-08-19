@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,10 +8,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   min-height: 100vh;
+  font-size: 15px;
+}
+.container {
+  padding: 10px 20px;
+  margin: 0 auto;
 }
 .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 700px;
+  border-radius: 15px;
+}
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  padding: 40px 50px;
+}
+.card1 h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+.card1 p {
+  margin-top: 23px;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 18px;
+}
+.card1 button {
+  margin-top: 56px;
+  border-radius: 30px;
+  border: none;
+  padding: 10px 25px;
+  font-size: 11px;
+  color: hsl(31, 77%, 52%);
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.card1 button:hover {
+  cursor: pointer;
+  border: solid 2px white;
+  background-color: hsl(31, 77%, 52%);
+  color: white;
 }
 .attribution {
   font-size: 11px;
